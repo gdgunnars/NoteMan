@@ -5,8 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --experimental-modules src/app.mjs",
-    //"build": "babel src/app.js -d dist"
+    "start": "nodemon --experimental-modules src/app.mjs"
   },
   "repository": {
     "type": "git",
