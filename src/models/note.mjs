@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 /**
  * @typedef Note
@@ -6,37 +6,37 @@ import mongoose from "mongoose";
  * @property {Array.<File>} files
  */
 const NoteSchema = new mongoose.Schema({
-    note: {
-        type: String,
-        required: true,
-        trim: true
+  note: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+  files: [
+    {
+      name: String,
+      data: Buffer,
+      contentType: String,
     },
-    files: [
-        {
-            name: String,
-            data: Buffer,
-            contentType: String
-        }
-    ]
+  ],
 }, {
-    timestamps: true
+  timestamps: true,
 });
 
 NoteSchema.index({
-    "note": "text",
-    "files.name": "text"
+  'note': 'text',
+  'files.name': 'text',
 }, {
-    weights: {
-        "note": 3,
-        "files.name": 1
-    }
+  weights: {
+    'note': 3,
+    'files.name': 1,
+  }
 });
 
 /**
  * @typedef File
  * @property {string} name.required - name of document
  * @property {Buffer} data.required - file data stored as Buffer
- * @property {string} contentType - mimeType of the file
+ * @property {string} contentType.required - mimeType of the file
  */
 
-export default mongoose.model("Note", NoteSchema);
+export default mongoose.model('Note', NoteSchema);

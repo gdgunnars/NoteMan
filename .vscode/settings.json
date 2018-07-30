@@ -1,3 +1,4 @@
 {
-    "jslint.version": "es6"
+    "jslint.version": "es6",
+    "editor.tabSize": 2
 }
