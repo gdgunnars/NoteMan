@@ -49,6 +49,12 @@ npm start
 
 Please keep in mind that we have the `--experimental-modules` flag enabled since we are using es6 import instead of require() to eliminate the use of Babel.
 
+
+## Documentation
+The API endpoints have documentation at runtime. When you have ran `npm start` go to `http://localhost:3000/api-docs/` or click [here](http://localhost:3000/api-docs/#/).
+
+We recommend to use curl or Postman for testing the API endpoints instead of trying to use the documentation testing capabilities.
+
 ## Running the tests
 
 Currently there are no automated tests.
