@@ -1,7 +1,7 @@
 {
   "name": "NoteMan",
   "version": "0.1.0",
-  "description": "",
+  "description": "Personal note taking API supporting file upload & reminders.",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@git.mikligardur.com:gdgunnars/NoteMan.git"
   },
   "author": "GDGunnars <gdg@gdg.is>",
   "license": "UNLICENSED",
