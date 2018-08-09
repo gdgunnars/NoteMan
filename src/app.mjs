@@ -2,9 +2,9 @@ import mongoose from 'mongoose';
 import express from 'express';
 import log from 'morgan';
 import bodyParser from 'body-parser';
+import expressSwagger from 'express-swagger-generator';
 import router from './router/router';
 import swaggerSettings from './swagger';
-import expressSwagger from 'express-swagger-generator';
 
 async function main() {
   try {
