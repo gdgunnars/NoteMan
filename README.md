@@ -72,4 +72,4 @@ Currently there are no automated tests.
 
 ## Authors
 
-* **Gunnar Davíð** - [GDGunnars(self hosted)](http://git.mikligardur.com/gdgunnars) / [github](https://github.com/gdgunnars)
+* **Gunnar Davíð** - [github](https://github.com/gdgunnars)
